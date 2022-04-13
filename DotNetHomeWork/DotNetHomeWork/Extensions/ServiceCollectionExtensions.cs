@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Linq;
+using AutoMapper;
 using DnsClient;
 using DotNetHomeWork.Core.Interfaces;
+using DotNetHomeWork.Core.Models;
 using DotNetHomeWork.Core.Services;
+using DotNetHomeWork.Dto;
 using DotNetHomeWork.Infrastructure;
+using DotNetHomeWork.Infrastructure.Models;
 using DotNetHomeWork.Infrastructure.Repositories;
+using DotNetHomeWork.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
@@ -19,6 +24,16 @@ namespace DotNetHomeWork.Extensions
 
             return serviceCollection
                 .AddSingleton(sp => Core.Logging.Logging.GetLog())
+                .AddSingleton(sp =>
+                {
+                    var config = new MapperConfiguration(cfg =>
+                    {
+                        cfg.CreateMap<Product, ProductModel>();
+                        cfg.CreateMap<ProductDto, Product>();
+                        cfg.CreateMap<ProductStored, Product>();
+                    });
+                    return config.CreateMapper();
+                })
                 .AddScoped<IMongoClient, MongoClient>()
                 .AddScoped<IProductService, ProductService>()
                 .AddScoped<IProductRepository, ProductRepository>()

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0/btmrtdenrKrj/JSaRkaeCjlADaGCKOU9RifGs9tbRA5ZPN1jZXegTZf4Nw+APajIbhBby67ycag161ft5lTg==",
+  "dgSpecHash": "ZcYGUQ0IelNKjW6nVGDVtyVQfUzQNUfuSJ165XufQ3FuxQIl5gUTZxGQTRUUmJrj/rXm3FAy+yPHx5Kf9etuFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\n.zavarzin\\Desktop\\Новая папка (2)\\DotNetHomeWork\\DotNetHomeWork\\DotNetHomeWork\\DotNetHomeWork.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

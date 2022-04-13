@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using AutoMapper;
 using DotNetHomeWork.Core.Interfaces;
 using DotNetHomeWork.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +13,12 @@ namespace DotNetHomeWork.Controllers
     {
         private readonly IProductService _productService;
         private readonly ILog log;
+        private readonly IMapper mapper;
 
-        public ProductsController(IProductService productService, ILog log)
+        public ProductsController(IProductService productService, ILog log, IMapper mapper)
         {
             this.log = log;
+            this.mapper = mapper;
             _productService = productService;
         }
 
@@ -27,7 +30,7 @@ namespace DotNetHomeWork.Controllers
                 var product = await _productService.GetProductAsync(name).ConfigureAwait(false);
                 if (product == null)
                     return NotFound();
-                return Ok(new ProductModel { Name = product.Name, Price = product.Price });
+                return Ok(mapper.Map<ProductModel>(product));
             }
             catch
             {
@@ -57,7 +60,7 @@ namespace DotNetHomeWork.Controllers
             try
             {
                 var product = await _productService.UpdateProductPriceAsync(name, newPrice).ConfigureAwait(false);
-                return Ok(new ProductModel { Name = product.Name, Price = product.Price });
+                return Ok(mapper.Map<ProductModel>(product));
             }
             catch
             {

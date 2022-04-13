@@ -1,4 +1,6 @@
+using AutoMapper;
 using DnsClient;
+using DotNetHomeWork.Core.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -6,7 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DotNetHomeWork.Extensions;
 using DotNetHomeWork.Infrastructure;
+using DotNetHomeWork.Infrastructure.Models;
 using DotNetHomeWork.Infrastructure.Repositories;
+using DotNetHomeWork.Models;
 using MongoDB.Driver;
 
 namespace DotNetHomeWork

@@ -57,3 +57,4 @@ C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeW
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Vostok.Logging.Console.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Vostok.Logging.File.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Vostok.Logging.Formatting.dll
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\AutoMapper.dll

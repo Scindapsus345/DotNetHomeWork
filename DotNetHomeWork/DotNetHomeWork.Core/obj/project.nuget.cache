@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yFUUPElhK/bRVV1aeYzpqm0W3yHdzdwhY09kKiRU+27vrIyYBcYlO/FaBTWjmiIQpOdE7yyvgdNWqBHRXbqkiw==",
+  "dgSpecHash": "TX2YZT+w85ok214DokdhWN5W4EVeNfo75yCK0hABjC6SF4W6FpRZ/sfpcvCnF3QT1xmXKu/1/T7xvNtZFtSyzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\n.zavarzin\\Desktop\\Новая папка (2)\\DotNetHomeWork\\DotNetHomeWork\\DotNetHomeWork.Core\\DotNetHomeWork.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\mongodb.bson\\2.15.0\\mongodb.bson.2.15.0.nupkg.sha512",

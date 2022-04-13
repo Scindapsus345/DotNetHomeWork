@@ -2,6 +2,7 @@
 using DotNetHomeWork.Core.Models;
 using DotNetHomeWork.Infrastructure.Models;
 using System.Threading.Tasks;
+using AutoMapper;
 using DotNetHomeWork.Infrastructure.Repositories;
 using Vostok.Logging.Abstractions;
 
@@ -11,23 +12,25 @@ namespace DotNetHomeWork.Core.Services
     {
         private readonly IProductRepository _productRepository;
         private readonly ILog log;
+        private readonly IMapper mapper;
 
-        public ProductService(IProductRepository productRepository, ILog log)
+        public ProductService(IProductRepository productRepository, ILog log, IMapper mapper)
         {
             _productRepository = productRepository;
             this.log = log;
+            this.mapper = mapper;
         }
 
         public async Task<Product> AddProductAsync(string name, int price)
         {
-            var product = await _productRepository.AddOrUpdateProductAsync(new ProductAddModel { Name = name, Price = price });
+            var product = await _productRepository.AddOrUpdateProductAsync(new ProductAddModel(name, price));
             log.Info($"Товар {name} создан");
-            return new Product { Name = product.Name, Price = product.Price };
+            return mapper.Map<Product>(product);
         }
 
         public async Task DeleteProductAsync(string name)
         {
-            await _productRepository.DeleteProductAsync(new ProductDeleteModel { Name = name });
+            await _productRepository.DeleteProductAsync(new ProductDeleteModel(name: name));
             log.Info($"Товар {name} удален");
         }
 
@@ -35,7 +38,7 @@ namespace DotNetHomeWork.Core.Services
         {
             var product = await _productRepository.GetProductAsync(name).ConfigureAwait(false);
             if (product == null) return null;
-            return new Product {Name = product.Name, Price = product.Price};
+            return mapper.Map<Product>(product);
         }
 
         public async Task<bool> TryBuyProductAsync(string name, int moneyAmount)
@@ -53,15 +56,15 @@ namespace DotNetHomeWork.Core.Services
                 return false;
             }
             log.Info($"Товар {name} куплен");
-            await _productRepository.DeleteProductAsync(new ProductDeleteModel { Name = name }).ConfigureAwait(false);
+            await _productRepository.DeleteProductAsync(new ProductDeleteModel(name)).ConfigureAwait(false);
             return true;
         }
 
         public async Task<Product> UpdateProductPriceAsync(string name, int newPrice)
         {
-            var product = await _productRepository.AddOrUpdateProductAsync(new ProductAddModel { Name = name, Price = newPrice });
+            var product = await _productRepository.AddOrUpdateProductAsync(new ProductAddModel(name, newPrice));
             log.Info($"Цена на {name} обновлена ({newPrice})");
-            return new Product { Name = product.Name, Price = product.Price };
+            return mapper.Map<Product>(product);
         }
     }
 }
