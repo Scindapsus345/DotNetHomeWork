@@ -2,6 +2,7 @@
 using AutoMapper;
 using DotNetHomeWork.Core.Interfaces;
 using DotNetHomeWork.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Vostok.Logging.Abstractions;
 
@@ -23,6 +24,9 @@ namespace DotNetHomeWork.Controllers
         }
 
         [HttpGet("{name}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<OkObjectResult>> GetProduct(string name)
         {
             try
@@ -39,6 +43,8 @@ namespace DotNetHomeWork.Controllers
         }
 
         [HttpPost("{name}")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<ActionResult<CreatedResult>> CreateProduct(string name, int price)
         {
             try
@@ -55,6 +61,8 @@ namespace DotNetHomeWork.Controllers
         }
 
         [HttpPut("{name}")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<OkObjectResult>> UpdatePrice(string name, int newPrice)
         {
             try
@@ -69,6 +77,8 @@ namespace DotNetHomeWork.Controllers
         }
 
         [HttpDelete("{name}")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<ActionResult<NoContentResult>> DeleteProduct(string name)
         {
             try
@@ -83,6 +93,8 @@ namespace DotNetHomeWork.Controllers
         }
 
         [HttpGet("{name}/trybuy")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<OkObjectResult>> TryBuyProduct(string name, int moneyAmount)
         {
             try
