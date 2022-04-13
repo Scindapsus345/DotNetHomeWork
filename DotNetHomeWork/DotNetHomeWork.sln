@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetHomeWork", "DotNetHom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetHomeWork.Core", "DotNetHomeWork.Core\DotNetHomeWork.Core.csproj", "{737D8CC3-530D-4ECA-9329-19576EB67EC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetHomeWork.Infrastructure", "DotNetHomeWork.Infrastructure\DotNetHomeWork.Infrastructure.csproj", "{E132F0F8-5922-4508-AA35-93067ED49926}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{737D8CC3-530D-4ECA-9329-19576EB67EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{737D8CC3-530D-4ECA-9329-19576EB67EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{737D8CC3-530D-4ECA-9329-19576EB67EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E132F0F8-5922-4508-AA35-93067ED49926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E132F0F8-5922-4508-AA35-93067ED49926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E132F0F8-5922-4508-AA35-93067ED49926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E132F0F8-5922-4508-AA35-93067ED49926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
