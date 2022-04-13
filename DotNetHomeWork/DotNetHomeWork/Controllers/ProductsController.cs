@@ -1,14 +1,13 @@
-﻿using System;
-using System.Net;
-using System.Threading.Tasks;
-using System.Web.Http;
+﻿using System.Threading.Tasks;
 using DotNetHomeWork.Core.Interfaces;
 using DotNetHomeWork.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetHomeWork.Controllers
 {
     [Route("api/products")]
-    public class ProductsController : ApiController
+    [ApiController]
+    public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
         public ProductsController(IProductService productService)
@@ -17,42 +16,38 @@ namespace DotNetHomeWork.Controllers
         }
 
         [HttpGet]
-        [Route("{name:string}")]
-        public async Task<IHttpActionResult> GetProduct(string name)
+        public async Task<ActionResult<OkObjectResult>> GetProduct(string name)
         {
             var product = await _productService.GetProductAsync(name).ConfigureAwait(false);
             return Ok(new ProductModel { Name = product.Name, Price = product.Price });
         }
 
         [HttpPost]
-        [Route("{name:string}")]
-        public async Task<IHttpActionResult> CreateProduct(string name, int price)
+        [Route("{name}")]
+        public async Task<ActionResult<CreatedResult>> CreateProduct(string name, int price)
         {
             var product = await _productService.AddProductAsync(name, price).ConfigureAwait(false);
-            var location = $"{Request.RequestUri.GetLeftPart(UriPartial.Path)}";
+            var location = $"{Request.Path.Value}";
 
             return Created(location, product);
         }
 
-        [HttpPut]
-        [Route("{name:string}")]
-        public async Task<IHttpActionResult> UpdatePrice(string name, int newPrice)
+        [HttpPut("{name}")]
+        public async Task<ActionResult<OkObjectResult>> UpdatePrice(string name, int newPrice)
         {
             var product = await _productService.UpdateProductPriceAsync(name, newPrice).ConfigureAwait(false);
             return Ok(new ProductModel { Name = product.Name, Price = product.Price });
         }
 
-        [HttpDelete]
-        [Route("{name:string}")]
-        public async Task<IHttpActionResult> DeleteProduct(string name)
+        [HttpDelete("{name}")]
+        public async Task<ActionResult<NoContentResult>> DeleteProduct(string name)
         {
             await _productService.DeleteProductAsync(name);
-            return StatusCode(HttpStatusCode.NoContent);
+            return NoContent();
         }
 
-        [HttpPost]
-        [Route("{name:string}/trybuy")]
-        public async Task<IHttpActionResult> TryBuyProduct(string name, int moneyAmount)
+        [HttpPost("{name}/trybuy")]
+        public async Task<ActionResult<OkObjectResult>> TryBuyProduct(string name, int moneyAmount)
         {
             var productIsBought = await _productService.TryBuyProductAsync(name, moneyAmount).ConfigureAwait(false);
 

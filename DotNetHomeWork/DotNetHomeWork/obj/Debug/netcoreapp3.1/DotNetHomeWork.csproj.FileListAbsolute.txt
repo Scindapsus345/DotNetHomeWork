@@ -18,15 +18,11 @@ C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeW
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\obj\Debug\netcoreapp3.1\DotNetHomeWork.pdb
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\obj\Debug\netcoreapp3.1\DotNetHomeWork.genruntimeconfig.cache
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\DnsClient.dll
-C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
-C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\System.Web.Http.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
-C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\SharpCompress.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
@@ -50,3 +46,10 @@ C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeW
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\DotNetHomeWork.Core.pdb
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\DotNetHomeWork.Infrastructure.pdb
 C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\obj\Debug\netcoreapp3.1\DotNetHomeWork.csproj.CopyComplete
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\obj\Debug\netcoreapp3.1\DotNetHomeWork.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\n.zavarzin\Desktop\Новая папка (2)\DotNetHomeWork\DotNetHomeWork\DotNetHomeWork\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
