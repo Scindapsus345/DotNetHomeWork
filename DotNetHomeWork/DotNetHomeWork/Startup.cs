@@ -1,10 +1,13 @@
+using DnsClient;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DotNetHomeWork.Extensions;
-using Microsoft.OpenApi.Models;
+using DotNetHomeWork.Infrastructure;
+using DotNetHomeWork.Infrastructure.Repositories;
+using MongoDB.Driver;
 
 namespace DotNetHomeWork
 {
@@ -35,6 +38,9 @@ namespace DotNetHomeWork
                 app.UseDeveloperExceptionPage();
             }
 
+            // Будет падать пока БД не захостирована
+            // EnsureBankIntegrationsCollectionExists();
+
             app.UseSwagger();
             app.UseSwaggerUI();
 
@@ -48,6 +54,13 @@ namespace DotNetHomeWork
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private void EnsureBankIntegrationsCollectionExists()
+        {
+            var mongoClient = new MongoClient(DBSettings.ConnectionString);
+            var repository = new ProductRepository(mongoClient, Core.Logging.Logging.GetLog());
+            repository.EnsureCollectionExists();
         }
     }
 }

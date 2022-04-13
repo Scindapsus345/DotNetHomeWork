@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using DnsClient;
 using DotNetHomeWork.Core.Interfaces;
 using DotNetHomeWork.Core.Services;
 using DotNetHomeWork.Infrastructure;
@@ -17,6 +18,7 @@ namespace DotNetHomeWork.Extensions
             serviceCollection.RegisterControllers();
 
             return serviceCollection
+                .AddSingleton(sp => Core.Logging.Logging.GetLog())
                 .AddScoped<IMongoClient, MongoClient>()
                 .AddScoped<IProductService, ProductService>()
                 .AddScoped<IProductRepository, ProductRepository>()

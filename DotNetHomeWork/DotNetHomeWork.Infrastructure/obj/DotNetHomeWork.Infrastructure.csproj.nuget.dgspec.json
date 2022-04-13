@@ -47,6 +47,18 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.15.0, )"
+            },
+            "Vostok.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.30, )"
+            },
+            "Vostok.Logging.Console": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Vostok.Logging.File": {
+              "target": "Package",
+              "version": "[1.0.20, )"
             }
           },
           "imports": [

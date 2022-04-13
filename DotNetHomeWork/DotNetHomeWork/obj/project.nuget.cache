@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f57nHu31esXvZob6PWQjO1iL2SGqCsUxVKF3MrRqzE0jp8mNkwrXugRRF/5GrrAqx3UEb8P6cHLD4i5nOZgr0Q==",
+  "dgSpecHash": "0/btmrtdenrKrj/JSaRkaeCjlADaGCKOU9RifGs9tbRA5ZPN1jZXegTZf4Nw+APajIbhBby67ycag161ft5lTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\n.zavarzin\\Desktop\\Новая папка (2)\\DotNetHomeWork\\DotNetHomeWork\\DotNetHomeWork\\DotNetHomeWork.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,11 @@
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\n.zavarzin\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "C:\\Users\\n.zavarzin\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\vostok.logging.abstractions\\1.0.30\\vostok.logging.abstractions.1.0.30.nupkg.sha512",
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\vostok.logging.console\\1.0.8\\vostok.logging.console.1.0.8.nupkg.sha512",
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\vostok.logging.file\\1.0.20\\vostok.logging.file.1.0.20.nupkg.sha512",
+    "C:\\Users\\n.zavarzin\\.nuget\\packages\\vostok.logging.formatting\\1.0.10\\vostok.logging.formatting.1.0.10.nupkg.sha512"
   ],
   "logs": []
 }

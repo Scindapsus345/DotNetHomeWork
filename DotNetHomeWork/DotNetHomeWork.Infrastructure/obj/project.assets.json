@@ -221,6 +221,53 @@
             "rid": "win"
           }
         }
+      },
+      "Vostok.Logging.Abstractions/1.0.30": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Vostok.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.Abstractions.dll": {}
+        }
+      },
+      "Vostok.Logging.Console/1.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Vostok.Logging.Abstractions": "1.0.23",
+          "Vostok.Logging.Formatting": "1.0.8"
+        },
+        "compile": {
+          "lib/netstandard2.0/Vostok.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.Console.dll": {}
+        }
+      },
+      "Vostok.Logging.File/1.0.20": {
+        "type": "package",
+        "dependencies": {
+          "Vostok.Logging.Abstractions": "1.0.29",
+          "Vostok.Logging.Formatting": "1.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Vostok.Logging.File.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.File.dll": {}
+        }
+      },
+      "Vostok.Logging.Formatting/1.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Vostok.Logging.Abstractions": "1.0.28"
+        },
+        "compile": {
+          "lib/netstandard2.0/Vostok.Logging.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.Formatting.dll": {}
+        }
       }
     }
   },
@@ -616,11 +663,78 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Vostok.Logging.Abstractions/1.0.30": {
+      "sha512": "2X+cuNq3P3htvCJ4PQHVonS/Yr8Opc8X7SL6kBijC7kLU2vWbLJaXr/KCk5YVoPtI6n0wtrD7hGUegKRgdyXBw==",
+      "type": "package",
+      "path": "vostok.logging.abstractions/1.0.30",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Vostok.Logging.Abstractions.dll",
+        "lib/net6.0/Vostok.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Vostok.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Vostok.Logging.Abstractions.xml",
+        "vostok.logging.abstractions.1.0.30.nupkg.sha512",
+        "vostok.logging.abstractions.nuspec"
+      ]
+    },
+    "Vostok.Logging.Console/1.0.8": {
+      "sha512": "udnneGCCiVMKkxb1ib9wqKHmZ/MhiMIJACPoYSlNiUx8FhbSrtjHwfiaZ9q15hR1oO3Ps/1yzfySzJXBtzEWyQ==",
+      "type": "package",
+      "path": "vostok.logging.console/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Vostok.Logging.Console.dll",
+        "lib/net6.0/Vostok.Logging.Console.xml",
+        "lib/netstandard2.0/Vostok.Logging.Console.dll",
+        "lib/netstandard2.0/Vostok.Logging.Console.xml",
+        "vostok.logging.console.1.0.8.nupkg.sha512",
+        "vostok.logging.console.nuspec"
+      ]
+    },
+    "Vostok.Logging.File/1.0.20": {
+      "sha512": "xsP2FBR5LcEg5I1KEu2YTe0lUe11zSUX7Dc15MzDy/ovIc7/Bq57wAC/2vnXTqDNSCr0J81qU4n+ss39XEcfAA==",
+      "type": "package",
+      "path": "vostok.logging.file/1.0.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Vostok.Logging.File.dll",
+        "lib/net6.0/Vostok.Logging.File.xml",
+        "lib/netstandard2.0/Vostok.Logging.File.dll",
+        "lib/netstandard2.0/Vostok.Logging.File.xml",
+        "vostok.logging.file.1.0.20.nupkg.sha512",
+        "vostok.logging.file.nuspec"
+      ]
+    },
+    "Vostok.Logging.Formatting/1.0.10": {
+      "sha512": "Jd+5ZIVCgDJnxjQ0bBmnRwviPdpL9uhMXgmDMTmpNGivfydCIeqS836Rng7aB7WLS3EtzzpdWq0LpHGHdwpYAA==",
+      "type": "package",
+      "path": "vostok.logging.formatting/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Vostok.Logging.Formatting.dll",
+        "lib/net6.0/Vostok.Logging.Formatting.xml",
+        "lib/netstandard2.0/Vostok.Logging.Formatting.dll",
+        "lib/netstandard2.0/Vostok.Logging.Formatting.xml",
+        "vostok.logging.formatting.1.0.10.nupkg.sha512",
+        "vostok.logging.formatting.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "MongoDB.Driver >= 2.15.0"
+      "MongoDB.Driver >= 2.15.0",
+      "Vostok.Logging.Abstractions >= 1.0.30",
+      "Vostok.Logging.Console >= 1.0.8",
+      "Vostok.Logging.File >= 1.0.20"
     ]
   },
   "packageFolders": {
@@ -670,6 +784,18 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.15.0, )"
+          },
+          "Vostok.Logging.Abstractions": {
+            "target": "Package",
+            "version": "[1.0.30, )"
+          },
+          "Vostok.Logging.Console": {
+            "target": "Package",
+            "version": "[1.0.8, )"
+          },
+          "Vostok.Logging.File": {
+            "target": "Package",
+            "version": "[1.0.20, )"
           }
         },
         "imports": [

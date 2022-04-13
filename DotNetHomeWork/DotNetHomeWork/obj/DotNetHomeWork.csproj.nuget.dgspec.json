@@ -47,6 +47,20 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Vostok.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.30, )"
+            },
+            "Vostok.Logging.Console": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Vostok.Logging.File": {
+              "target": "Package",
+              "version": "[1.0.20, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -109,6 +123,18 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.15.0, )"
+            },
+            "Vostok.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.30, )"
+            },
+            "Vostok.Logging.Console": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Vostok.Logging.File": {
+              "target": "Package",
+              "version": "[1.0.20, )"
             }
           },
           "imports": [

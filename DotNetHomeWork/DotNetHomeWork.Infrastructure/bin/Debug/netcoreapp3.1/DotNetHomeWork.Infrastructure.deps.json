@@ -8,7 +8,10 @@
     ".NETCoreApp,Version=v3.1": {
       "DotNetHomeWork.Infrastructure/1.0.0": {
         "dependencies": {
-          "MongoDB.Driver": "2.15.0"
+          "MongoDB.Driver": "2.15.0",
+          "Vostok.Logging.Abstractions": "1.0.30",
+          "Vostok.Logging.Console": "1.0.8",
+          "Vostok.Logging.File": "1.0.20"
         },
         "runtime": {
           "DotNetHomeWork.Infrastructure.dll": {}
@@ -205,6 +208,49 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "Vostok.Logging.Abstractions/1.0.30": {
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.Abstractions.dll": {
+            "assemblyVersion": "1.0.30.0",
+            "fileVersion": "1.0.30.0"
+          }
+        }
+      },
+      "Vostok.Logging.Console/1.0.8": {
+        "dependencies": {
+          "Vostok.Logging.Abstractions": "1.0.30",
+          "Vostok.Logging.Formatting": "1.0.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.Console.dll": {
+            "assemblyVersion": "1.0.8.0",
+            "fileVersion": "1.0.8.0"
+          }
+        }
+      },
+      "Vostok.Logging.File/1.0.20": {
+        "dependencies": {
+          "Vostok.Logging.Abstractions": "1.0.30",
+          "Vostok.Logging.Formatting": "1.0.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.File.dll": {
+            "assemblyVersion": "1.0.20.0",
+            "fileVersion": "1.0.20.0"
+          }
+        }
+      },
+      "Vostok.Logging.Formatting/1.0.10": {
+        "dependencies": {
+          "Vostok.Logging.Abstractions": "1.0.30"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Vostok.Logging.Formatting.dll": {
+            "assemblyVersion": "1.0.10.0",
+            "fileVersion": "1.0.10.0"
+          }
+        }
       }
     }
   },
@@ -297,6 +343,34 @@
       "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
       "path": "system.security.principal.windows/5.0.0",
       "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
+    },
+    "Vostok.Logging.Abstractions/1.0.30": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2X+cuNq3P3htvCJ4PQHVonS/Yr8Opc8X7SL6kBijC7kLU2vWbLJaXr/KCk5YVoPtI6n0wtrD7hGUegKRgdyXBw==",
+      "path": "vostok.logging.abstractions/1.0.30",
+      "hashPath": "vostok.logging.abstractions.1.0.30.nupkg.sha512"
+    },
+    "Vostok.Logging.Console/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-udnneGCCiVMKkxb1ib9wqKHmZ/MhiMIJACPoYSlNiUx8FhbSrtjHwfiaZ9q15hR1oO3Ps/1yzfySzJXBtzEWyQ==",
+      "path": "vostok.logging.console/1.0.8",
+      "hashPath": "vostok.logging.console.1.0.8.nupkg.sha512"
+    },
+    "Vostok.Logging.File/1.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xsP2FBR5LcEg5I1KEu2YTe0lUe11zSUX7Dc15MzDy/ovIc7/Bq57wAC/2vnXTqDNSCr0J81qU4n+ss39XEcfAA==",
+      "path": "vostok.logging.file/1.0.20",
+      "hashPath": "vostok.logging.file.1.0.20.nupkg.sha512"
+    },
+    "Vostok.Logging.Formatting/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jd+5ZIVCgDJnxjQ0bBmnRwviPdpL9uhMXgmDMTmpNGivfydCIeqS836Rng7aB7WLS3EtzzpdWq0LpHGHdwpYAA==",
+      "path": "vostok.logging.formatting/1.0.10",
+      "hashPath": "vostok.logging.formatting.1.0.10.nupkg.sha512"
     }
   }
 }

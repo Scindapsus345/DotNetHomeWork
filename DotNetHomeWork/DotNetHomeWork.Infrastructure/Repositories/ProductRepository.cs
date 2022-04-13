@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using DotNetHomeWork.Infrastructure.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using Vostok.Logging.Abstractions;
 
 namespace DotNetHomeWork.Infrastructure.Repositories
 {
@@ -12,10 +13,12 @@ namespace DotNetHomeWork.Infrastructure.Repositories
         private const string CollectionName = "Products";
         private const string DataBaseName = "DotNetHomeWork";
         private readonly IMongoClient mongoClient;
+        private readonly ILog log;
 
-        public ProductRepository(IMongoClient mongoClient)
+        public ProductRepository(IMongoClient mongoClient, ILog log)
         {
             this.mongoClient = mongoClient;
+            this.log = log;
         }
 
         public void EnsureCollectionExists()
@@ -25,7 +28,7 @@ namespace DotNetHomeWork.Infrastructure.Repositories
             if (!collectionExists)
             {
                 var errorMessage = $"Collection {CollectionName} does not exist";
-                //log.Error(errorMessage);
+                log.Error(errorMessage);
                 throw new Exception(errorMessage);
             }
 
@@ -47,6 +50,7 @@ namespace DotNetHomeWork.Infrastructure.Repositories
             }
             catch (Exception exception)
             {
+                log.Error(exception);
                 throw;
             }
         }
@@ -62,6 +66,7 @@ namespace DotNetHomeWork.Infrastructure.Repositories
             }
             catch (Exception exception)
             {
+                log.Error(exception);
                 throw;
             }
         }
@@ -75,13 +80,12 @@ namespace DotNetHomeWork.Infrastructure.Repositories
                     .Find(p => p.Name == name)
                     .FirstOrDefaultAsync()
                     .ConfigureAwait(false);
-                //if (product == null)
-                    //log.Warn($"Bank integration not found (OrgId = {orgId}, Account = {bankRequisites.Account}, Bik  = {bankRequisites.Bik})");
-
+                
                 return product;
             }
             catch (Exception exception)
             {
+                log.Error(exception);
                 throw;
             }
         }
